@@ -8,6 +8,7 @@ const app = express();
 app.use (express.json());
 
 app.use('/api/tasks', require('./routes/taskroute'));  // ← CORRECTED!
+app.use('/api/auth',require('./routes/authroutes'));
 
 
 
